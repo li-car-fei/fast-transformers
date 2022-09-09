@@ -133,7 +133,7 @@ def get_extensions():
             extra_compile_args=_get_cpu_extra_compile_args()
         )
     ]
-    if cuda_toolkit_available():
+    if torch.cuda.is_available():
         from torch.utils.cpp_extension import CUDAExtension
         extensions += [
             CUDAExtension(
