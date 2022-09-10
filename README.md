@@ -44,3 +44,18 @@ pip install git+https://github.com/li-car-fei/fast-transformers --user --no-cach
 subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
 ```
 参看以下：https://blog.csdn.net/qq_41452267/article/details/124087590
+
+
+
+# 无需改动的版本信息：
+
+以下依赖版本可直接安装：
+```bash
+    - python=3.7
+    - cudatoolkit=11.1
+    - pytorch==1.8.0
+    - cudatoolkit-dev=11.2.     # linux 机器的cudatoolkit版本是11.2
+    
+    
+     pip install pytorch-fast-transformers --user
+```
